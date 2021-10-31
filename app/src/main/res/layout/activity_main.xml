@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="about"
+        app:srcCompat="@android:drawable/ic_dialog_info"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/calculator" />
+
+    <EditText
+        android:id="@+id/etFirstValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter your first Value"
+        android:inputType="number"
+        android:padding="10dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/etSecondValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Enter your second Value"
+        android:inputType="number"
+        android:padding="10dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvAns"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/btnPlus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#03A9F4"
+        android:backgroundTint="#03A9F4"
+        android:elegantTextHeight="true"
+        android:text="@string/Plus"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#03A9F4"
+        android:backgroundTint="#03A9F4"
+        android:elegantTextHeight="true"
+        android:padding="10dp"
+        android:text="@string/Minus"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnMulti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#03A9F4"
+        android:backgroundTint="#03A9F4"
+        android:elegantTextHeight="true"
+        android:padding="10dp"
+        android:text="@string/MultiPly"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnDevide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#03A9F4"
+        android:backgroundTint="#03A9F4"
+        android:elegantTextHeight="true"
+        android:padding="10dp"
+        android:text="@string/Devide"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:ignore="TextContrastCheck" />
+
+</LinearLayout>
